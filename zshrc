@@ -88,3 +88,4 @@ source ~/.extra
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 source /usr/local/share/zsh/site-functions/_aws
+source ~/.extra
