@@ -6,5 +6,7 @@
     ~/.vim: vim/
     ~/.gitconfig: gitconfig
 
-- shell:
-    [git submodule update --init --recursive, Installing/updating submodules]
+- shell: [
+        [./setup-scripts/brew.sh, "Installing brew kegs"],
+        [./setup-scripts/cask.sh, "Installing brew casks"]
+    ]
