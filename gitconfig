@@ -1,0 +1,5 @@
+[user]
+	name = Ross McKelvie
+	email = iam@rossmckelvie.com
+[credential]
+	helper = osxkeychain
