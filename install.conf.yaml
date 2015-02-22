@@ -5,6 +5,7 @@
     ~/.oh-my-zsh: oh-my-zsh/
     ~/.vim: vim/
     ~/.gitconfig: gitconfig
+    ~/.zsh-custom: zsh/
 
 - shell: [
         [./setup-scripts/brew.sh, "Installing brew kegs"],
