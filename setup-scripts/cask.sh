@@ -11,7 +11,10 @@ installcask 1password
 installcask alfred
 installcask dropbox
 installcask google-chrome
+installcask istat-menus
 installcask nosleep
+installcask mailbox
+installcask mou
 installcask slack
 installcask spotify
 installcask the-unarchiver
@@ -20,6 +23,7 @@ installcask vlc
 # Development
 installcask atom
 installcask dash
+installcask fabric
 installcask github
 installcask iterm2
 installcask macvim
