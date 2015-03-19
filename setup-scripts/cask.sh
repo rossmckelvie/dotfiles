@@ -6,19 +6,25 @@ function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
+# Core / Personal
 installcask 1password
 installcask alfred
+installcask dropbox
+installcask google-chrome
+installcask nosleep
+installcask slack
+installcask spotify
+installcask the-unarchiver
+installcask vlc
+
+# Development
 installcask atom
 installcask dash
-installcask dropbox
 installcask github
-installcask google-chrome
 installcask iterm2
 installcask macvim
 installcask mamp
-installcask nosleep
-installcask the-unarchiver
 installcask sequel-pro
-installcask slack
-installcask spotify
-installcask vlc
+
+# Link to Alfred
+brew cask alfred link
