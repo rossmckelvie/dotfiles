@@ -2,33 +2,29 @@
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-function installcask() {
-	brew cask install "${@}" 2> /dev/null
-}
-
 # Core / Personal
-installcask 1password
-installcask alfred
-installcask dropbox
-installcask google-chrome
-installcask istat-menus
-installcask nosleep
-installcask mailbox
-installcask mou
-installcask slack
-installcask spotify
-installcask the-unarchiver
-installcask vlc
+brew cask install 1password
+brew cask install alfred
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install istat-menus
+brew cask install nosleep
+brew cask install mailbox
+brew cask install mou
+brew cask install slack
+brew cask install spotify
+brew cask install the-unarchiver
+brew cask install vlc
 
 # Development
-installcask atom
-installcask dash
-installcask fabric
-installcask github
-installcask iterm2
-installcask macvim
-installcask mamp
-installcask sequel-pro
+brew cask install atom
+brew cask install dash
+brew cask install fabric
+brew cask install github
+brew cask install iterm2
+brew cask install macvim
+brew cask install mamp
+brew cask install sequel-pro
 
 # Link to Alfred
 brew cask alfred link
