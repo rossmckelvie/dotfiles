@@ -7,6 +7,7 @@ function installcask() {
 }
 
 installcask 1password
+installcask alfred
 installcask atom
 installcask dash
 installcask dropbox
@@ -19,4 +20,5 @@ installcask nosleep
 installcask the-unarchiver
 installcask sequel-pro
 installcask slack
+installcask spotify
 installcask vlc
