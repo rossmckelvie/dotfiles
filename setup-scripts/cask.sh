@@ -25,6 +25,3 @@ brew cask install iterm2
 brew cask install macvim
 brew cask install mamp
 brew cask install sequel-pro
-
-# Link to Alfred
-brew cask alfred link
