@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew bundler common-aliases gem git osx rvm zsh-syntax-highlighting)
+plugins=(brew bundler common-aliases gem git osx rvm zsh-completions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,11 +80,10 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.extra
 . `brew --prefix`/etc/profile.d/z.sh
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-source /usr/local/share/zsh/site-functions/_aws
 source ~/.extra
+eval "$(chef shell-init zsh)"
