@@ -1,6 +1,7 @@
 [user]
 	name = Ross McKelvie
 	email = iam@rossmckelvie.com
+	signingkey = SET_FOR_MACHINE
 [credential]
 	helper = osxkeychain
 [filter "hawser"]
@@ -13,3 +14,11 @@
 	required = true
 [core]
 	autocrlf = input
+[github]
+	user = rossmckelvie
+[alias]
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
