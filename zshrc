@@ -50,7 +50,8 @@ plugins=(aws brew common-aliases docker git osx zsh-completions zsh-syntax-highl
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# Git signing
+export GPG_TTY=$(tty)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -62,3 +63,13 @@ export EDITOR='vim'
 
 source ~/.extra
 export PATH="$PATH"
+
+# Prefer exa over ls for colors
+if [ -x "$(command -v exa)" ]; then
+    ls() { exa "${@:2}" }
+fi
+
+# Prefer httpstat over curl
+if [ -x "$(command -v httpstat)" ]; then
+    curl() { httpstat "${@:2}" }
+fi

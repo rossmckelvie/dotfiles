@@ -3,9 +3,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew doctor
 
-  # Install useful binaries
+  # Install useful things
   brew install curl
+  brew install exa
   brew install node
+  brew install python3
   brew install the_silver_searcher
   brew install wget
   brew install zsh
